@@ -28,4 +28,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: speedtester-windows
-        path: PyRW-Windows/speedtester.exe
+        path: dist/PyRW-Windows.exe
