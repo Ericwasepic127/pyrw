@@ -1,0 +1,31 @@
+name: Build Mac App
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.13'
+
+    - name: Install dependencies
+      run: |
+        pip install pyinstaller
+
+    - name: Build Mac App
+      run: |
+        pyinstaller --onefile --console --name PyRW-Mac main.py
+
+    - name: Upload .app
+      uses: actions/upload-artifact@v4
+      with:
+        name: PyRW-Mac
+        path: dist/PyRW-Mac
