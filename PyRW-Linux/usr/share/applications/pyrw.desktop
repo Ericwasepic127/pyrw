@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=PyRW-for-Linux
+Comment=Python Read and Write Benchmarking
+Exec=/usr/local/bin/pyrw
+Terminal=false
+StartupNotify=true
+Categories=Network;Utility;FileTransfer;
+Keywords=speed;test;python;pyrw;benchmark;pyrw;rw;

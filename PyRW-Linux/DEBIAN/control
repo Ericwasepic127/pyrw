@@ -1,0 +1,8 @@
+Package: pyrw-linux
+Version: 1.0-1
+Section: utils
+Priority: optional
+Architecture: all
+Maintainer: Ericwasepic127 <ericwasepic127@outlook.com>
+Depends: python3, python3-tk
+Description: Python Read and Write benchmarking with GUI
